@@ -1,3 +1,5 @@
+# Word Search Solver
+
 import sys
 import fileinput
  
