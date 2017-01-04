@@ -1,6 +1,6 @@
 # Puzzle-Tools
 
-This repo contains a variety of programs for solving puzzles and developed by Nicholas Hirning and Andy Chen
+This repo contains a variety of programs for solving puzzles and is developed by Nicholas Hirning and Andy Chen
 
 ### The Tools ###
 
