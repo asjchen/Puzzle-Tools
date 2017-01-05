@@ -1,5 +1,3 @@
-# Word Search Solver
-
 import sys
 import fileinput
  
@@ -145,9 +143,9 @@ def main():
     wst = make_trie(word_dict)
 
     print "Input each line of the word search on a separate line"
-    print "Press CTRL+D on a new line to begin searching"
+    print "Press ENTER after each line and press CTRL+D at the end"
 
-    ws_list = [line.lower().strip() for line in fileinput.input()] 
+    ws_list = [''.join(line.lower().split()) for line in fileinput.input()]
     print '\n', "Processing..."
 
     valid_horizontal_directions = [HORIZONTAL_FORWARDS_OK, HORIZONTAL_BACKWARDS_OK]
