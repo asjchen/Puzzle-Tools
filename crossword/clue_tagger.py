@@ -21,6 +21,7 @@ def process_nyt_clues_text(filename):
 
 	f = open(filename, 'rU') # universal newline support
 	lines = f.readlines()
+	f.close()
 	clue_data = {}	
 
 	for line in lines:
@@ -47,8 +48,9 @@ def tagging_pos(clue_data, verbose = False):
 def process_nyt_to_tagged(in_filename, out_filename, verbose = False):
 	clue_data = process_nyt_clues_text(in_filename)
 	tagged_data = tagging_pos(clue_data, verbose)
-	pickle.dump(tagged_data, open(out_filename, 'wb'))
-
+	f = open(out_filename, 'wb')
+	pickle.dump(tagged_data, f)
+	f.close()
 
 def main():
 	process_nyt_to_tagged(RAW_CLUE_FILE, TAGGED_CLUE_FILE, True)
