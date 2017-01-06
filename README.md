@@ -13,4 +13,4 @@ To check if words are valid, we will use either the internal word list (for our 
 
 Crossword data is pulled from https://github.com/donohoe/nyt-crossword. For more information view the readme in crossword/clue\_answer\_data/.
 
-The CSP class (used in the Sudoku solver and crossword solver) and all related algorithms are based off of code taken from the Stanford University CS 221 course.
+The CSP class (used in the Sudoku solver and crossword solver) and all related algorithms are based off of the CSP unit in Stanford University's CS 221 course.
