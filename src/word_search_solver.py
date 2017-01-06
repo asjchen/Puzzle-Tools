@@ -140,6 +140,7 @@ def find_diagonal_words(valid_directions, word_arr, wst):
 def main():
     f = open('/usr/share/dict/words', 'r')
     word_dict = [word.lower() for word in f.read().split()]
+    f.close()
     wst = make_trie(word_dict)
 
     print "Input each line of the word search on a separate line"
