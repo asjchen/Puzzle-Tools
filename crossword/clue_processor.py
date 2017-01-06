@@ -5,7 +5,7 @@ import pickle
 #from nltk.stem.porter import *
 
 RAW_CLUE_FILE = 'clue_answer_data/nyt_clues.txt'
-TAGGED_CLUE_FILE = 'clue_answer_data/nyt_tagged'
+TAGGED_CLUE_FILE = 'clue_answer_data/nyt_tagged.data'
 
 # Potential Issue: 	- clues with _ or - as in "Turn-___ (thrills)"
 #					- clues with parentheses or Abbr.
