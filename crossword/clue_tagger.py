@@ -1,8 +1,10 @@
 
+"""
+Used for processing raw clue data into tagged clue data
+"""
+
 import nltk
 import pickle
-#from nltk.stem import *
-#from nltk.stem.porter import *
 
 RAW_CLUE_FILE = 'clue_answer_data/nyt_clues.txt'
 TAGGED_CLUE_FILE = 'clue_answer_data/nyt_tagged.data'
@@ -49,11 +51,7 @@ def process_nyt_to_tagged(in_filename, out_filename, verbose = False):
 
 
 def main():
-	### Processes raw data to tagged data file ###
 	process_nyt_to_tagged(RAW_CLUE_FILE, TAGGED_CLUE_FILE, True)
-
-	### PART 2: The rest ###
-	# tagged_dict = pickle.load(open())
 
 
 if __name__ == '__main__':
