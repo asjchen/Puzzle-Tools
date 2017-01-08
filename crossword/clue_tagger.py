@@ -5,12 +5,12 @@ Used for processing raw clue data into tagged clue data
 
 import nltk
 import pickle
-
-RAW_CLUE_FILE = 'clue_answer_data/nyt_clues.txt'
-TAGGED_CLUE_FILE = 'clue_answer_data/nyt_tagged.data'
+from location_globals import *
 
 # Potential Issue: 	- clues with _ or - as in "Turn-___ (thrills)"
 #					- clues with parentheses or Abbr.
+#					- clues with quotes (some have double/triple quotes)
+#					- clues with possession (e.g., Aaron's cat)
 
 ####################################################
 ############ Processing Raw --> Tagged #############
