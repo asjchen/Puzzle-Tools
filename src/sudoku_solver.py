@@ -90,7 +90,8 @@ def input_sudoku(infile):
 	return raw_puzzle
 
 def main():
-	parser = argparse.ArgumentParser()
+	parser = argparse.ArgumentParser(description='Sudoku solver based on '\
+		'solving a CSP')
 	parser.add_argument('infile', nargs='?', type=argparse.FileType('r'), \
 		default=sys.stdin, help='Optional input file')
 	parser.add_argument('-a', '--all', action='store_true')
